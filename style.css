@@ -1,0 +1,49 @@
+body
+{
+    background-size: cover;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.heading h1
+{
+    display: inline;
+}
+
+.heading button
+{
+    float: right;
+    border: solid 1px orange;
+}
+
+.mario-image
+{
+    width: 100%;
+}
+
+.play
+{
+    font-size: 20px;
+}
+
+#status
+{
+    font-size: 20px;
+}
+
+#footer
+{
+    background-color: gray;
+    line-height: 2;
+    margin: 0px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}

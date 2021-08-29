@@ -1,0 +1,50 @@
+<!--created by yuvaan goel-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="table-tennis-image.jpeg">
+        <center>
+    <div class="btn btn-warning heading">
+      <h1>AI Table Tennis Game</h1>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
+    </div>
+    <br><br>
+    <button class="btn btn-success play" onclick="play();">Play</button>
+    <br><br>
+    <button class="btn btn-danger play" onclick="play();">Restart</button>
+    <br>
+    <br>
+    <h3 id="status" class="btn btn-info"></h3>
+    <br>
+    <br>
+    <div id="canvas"></div>
+    <h4 id="footer">Developed By: Yuvaan Goel</h4>
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Instructions For The Game</h3>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>You need to hit the ball so that you don't lose a point. Move your racket down by moving your cursor down, and move your racket up by moving your cursor up. Everytime you hit the ball (or the computer hits it), the speed increases by 0.5. The first person to lose 5 points loses. Stay focused and have fun!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+        <script src="main.js"></script>
+    </body>
+</html>
